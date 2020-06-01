@@ -1,0 +1,8 @@
+Alice;Admin
+George;Janitor
+Cecilia;Power
+David;Ordinary
+Erica;Ordinary
+Fred;Ordinary
+Henry;Ordinary
+Ida;Power
