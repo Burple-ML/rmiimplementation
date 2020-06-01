@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Client {
 
 	public static void main(String[] args) throws NotBoundException, IOException{
-		HelloService service = (HelloService) Naming.lookup("rmi://localhost:4020/hello");
+		ServiceInterface service = (ServiceInterface) Naming.lookup("rmi://localhost:4020/hello");
 		System.out.println("---- " + service.echo("Hey Client! How Can I Help? :-)") + " ----"); 
 		System.out.println("Enter your username: ");
 		Scanner scanner = new Scanner(System.in);

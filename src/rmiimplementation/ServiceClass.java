@@ -8,9 +8,9 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.Scanner;
 
-public class HelloServant extends UnicastRemoteObject implements HelloService{
+public class ServiceClass extends UnicastRemoteObject implements ServiceInterface{
 	
-	public HelloServant() throws RemoteException {
+	public ServiceClass() throws RemoteException {
 		super();
 	}
 

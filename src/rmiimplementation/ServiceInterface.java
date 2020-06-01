@@ -2,7 +2,7 @@ package rmiimplementation;
 import java.io.IOException;
 import java.rmi.*;
 
-public interface HelloService extends Remote{
+public interface ServiceInterface extends Remote{
 	public String echo(String input) throws RemoteException;
 	public int authenticate(String username, String password) throws RemoteException,IOException;
 	public int[] permissionList(String username) throws RemoteException,IOException;
