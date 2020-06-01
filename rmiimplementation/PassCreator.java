@@ -1,7 +1,7 @@
 package rmiimplementation;
 import java.io.*;
 import java.util.*;
-public class PassCreateor {
+public class PassCreator {
 
 	public static void main(String[] args) throws IOException {	
 		try {
