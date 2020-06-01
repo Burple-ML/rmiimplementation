@@ -8,7 +8,22 @@ The resource being shared is that of a printer, which is trying to be accessed r
 have different permissions, and also passwords must be stored in a safe and secure manner than readable verbatim passwords.
 Moreover, the roles of different users should be maintained using text files, so that it is easy to edit, and maintain. 
 
-For this task, I have made this implementation in java. I am storing passwords in 
+For this task, I have made this implementation in java. I am storing only hashed passwords and only hashed passwords are passed for authentication. The Passwords, the user roles and the Permissions for each role are saved in their respective `.txt` files 
+
+# How to run
+Create client and server command prompt instances. The following commands are with respect to the folder outside the package
+`rmiimplementation`
+* Compile the java files to get the .class files for the JVMs using the command - `javac rmiimplementation/*.java`
+* Compile the stub and skeleton using the command `rmic rmiimplementation.ServiceClass`
+* Initialise the lookup registry using the command `rmiregistry &` 
+* Now start a server instance and client instance using the `java ApplicationServer.class` and `java Client.class` respectively on their seperate prompts
+* Use the Usernames provided in the `Passwords.txt` file as usernames, and just append the phrase `pass` for password.
+For example; Password for Alice is `Alicepass`
+
+
+# TODO
+* New User creation logic can also be included in this setup, and for that i have included the `PassCreator.java` files. Although, this file doesnt serve much purpose as of now in the working of the system, so 
+* Please ignore the `PassCreator.java` files
 
 # Credits 
 The package used for password hashing is taken from - [jBCrypt]{https://github.com/jeremyh/jBCrypt} and is included in the namespace,
