@@ -19,24 +19,24 @@ public class ServiceClass extends UnicastRemoteObject implements ServiceInterfac
 	}
 	
 	public int authenticate(String username, String password) throws RemoteException,IOException{
-		//System.out.println("i am inside the function");
+		//System.out.println("inside authenticate function");
 		int a = 0;
 		File file2 = new File("Passwords.txt");
-		//System.out.println("i am inside the function");
+
 		    	if (file2 != null) {
-		    		//System.out.println("Ive scanned file 2");
+		    		//System.out.println("scanned file 2");
 					Scanner scanner = new Scanner(file2);
 					
 					// Reading the Passwords file
 					while (scanner.hasNextLine()) {
-						//System.out.println("im in the while loop");
+
 						String line = scanner.nextLine();
 			
 						if (line.substring(0, line.indexOf(";")).equals(username)) {
-							//System.out.println("im also here");
+
 							String hashed = line.substring(line.indexOf(";") + 1);
 							if (BCrypt.checkpw(password, hashed)) {
-								//System.out.println("i reached the final stage");
+
 								scanner.close();
 								a = 1;
 								System.out.println(a);
