@@ -26,5 +26,5 @@ For example; Password for Alice is `Alicepass`
 * Please ignore the `PassCreator.java` files
 
 # Credits 
-The package used for password hashing is taken from - [jBCrypt]{https://github.com/jeremyh/jBCrypt} and is included in the namespace,
+The package used for password hashing is taken from - [jBCrypt](https://github.com/jeremyh/jBCrypt) and is included in the namespace,
 which is an implementation of the OpenBSD Blowfish Hashing algorithm. 
