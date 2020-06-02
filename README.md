@@ -11,8 +11,7 @@ Moreover, the roles of different users should be maintained using text files, so
 For this task, I have made this implementation in java. I am storing only hashed passwords and only hashed passwords are passed for authentication. The Passwords, the user roles and the Permissions for each role are saved in their respective `.txt` files 
 
 # How to run
-Create client and server command prompt instances. The following commands are with respect to the folder outside the package
-`rmiimplementation`
+Create client and server command prompt instances. The following commands are with respect `rmiimplementation` being in the cwd
 * Compile the java files to get the .class files for the JVMs using the command - `javac rmiimplementation/*.java`
 * Compile the stub and skeleton using the command `rmic rmiimplementation.ServiceClass`
 * Initialise the lookup registry using the command `rmiregistry &` 
